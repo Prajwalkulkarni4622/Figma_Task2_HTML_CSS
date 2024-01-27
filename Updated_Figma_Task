@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            height: 60px;
+            background-color: rgb(22, 22, 131);
+
+        }
+
+        #head {
+            /* width: 846.66px; */
+            /* height: 210px; */
+            top: 243.54px;
+            left: 258px;
+            font-family: Cairo;
+            font-size: 60px;
+            font-weight: 700;
+            /* line-height: 105px; */
+            /* letter-spacing: 0px; */
+            text-align: left;
+
+        }
+
+        #b1 {
+            background-color: white;
+            color: black;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 10px;
+        }
+
+        h1 {
+            padding: 10px 10px 10px 40px;
+        }
+
+        p {
+            padding-left: 35px;
+            /* width: 300px; */
+            font-size: 15px;
+        }
+
+
+        #img1 {
+            width: 380px;
+            /* height: 400px; */
+            position: absolute;
+            top: 85px;
+            left: 808px;
+            /* radius: 50px; */
+        }
+
+        #d1 {
+            width: 527px;
+            /* height: 204px; */
+            top: 953px;
+            left: 240px;
+            font-family: Cairo;
+            font-size: 37px;
+            font-weight: 700;
+            /* line-height: 68px; */
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        #d2 {
+            width: 561px;
+            height: 253px;
+            top: 1195px;
+            left: 240px;
+            font-family: Cairo;
+            font-size: 17px;
+            font-weight: 500;
+            /* line-height: 35px; */
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        #d3 {
+            /* width: 629px; */
+            /* height: 76px; */
+            top: 1006px;
+            left: 1076px;
+            opacity: 0.7px;
+            font-family: Cairo;
+            font-size: 17px;
+            font-weight: 400;
+            /* line-height: 38px; */
+            /* letter-spacing: 0px; */
+            text-align: left;
+            /* padding-left:600px; */
+            padding-bottom: 25px 70px 105px 100px;
+        }
+
+        #d4 {
+            /* width: 602px;
+            height: 76px;
+            top: 1160px;
+            left: 1076px; */
+            opacity: 0.7px;
+            font-family: Cairo;
+            font-size: 17px;
+            font-weight: 400;
+            /* line-height: 38px;
+            letter-spacing: 0px; */
+            text-align: left;
+            /* padding-left:600px; */
+            /* padding-bottom: 25px 70px 105px 100px; */
+        }
+
+        .b2 {
+            padding-left: 35px;
+            padding-bottom: 25px 70px 105px 100px;
+        }
+
+        .b3 {
+            padding-left: 35px;
+            padding-bottom: 25px 70px 105px 100px;
+        }
+
+        #d6 {
+            padding-left: 35px;
+            padding-bottom: 25px 70px 105px 100px;
+        }
+
+        #d5 {
+            /* width: 602px;
+            height: 76px;
+            top: 1160px;
+            left: 1076px; */
+            opacity: 0.7px;
+            font-family: Cairo;
+            font-size: 17px;
+            font-weight: 400;
+            /* line-height: 38px; */
+            /* letter-spacing: 0px; */
+            text-align: left;
+            padding-left: 35px;
+            /* padding-bottom: 25px 70px 105px 100px; */
+        }
+
+        #d7 {
+            width: 602px;
+            height: 76px;
+            top: 1160px;
+            left: 1076px;
+            opacity: 0.7px;
+            font-family: Cairo;
+            font-size: 17px;
+            /* font-weight: 600; */
+            line-height: 38px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-left: 35px;
+            padding-bottom: 25px 70px 105px 100px;
+        }
+
+        .b4 {
+            padding-left: 35px;
+            padding-bottom: 25px 70px 105px 100px;
+        }
+
+        .b5 {
+            padding-left: 35px;
+            padding-bottom: 25px 70px 105px 100px;
+        }
+
+        /* .custom-col-md-2{
+    max-width: 13.666667%;
+}
+.btn-login{
+    width: 82px;
+    height: 29px;
+    border-radius: 4px;
+    background: none;
+    border: 1px solid #ffff;
+    color: #fff;
+    margin-right: 21px;
+    position: relative;
+    left: 19px;
+} */
+        .p-atg {
+            padding-left: 50px;
+            width: 90%;
+            font-size: 20px;
+        }
+
+        /* fotter css */
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .footer-section {
+            background: blue;
+            position: relative;
+        }
+
+        .footer-cta {
+            border-bottom: 1px solid #373636;
+        }
+
+        .single-cta i {
+            color: #ff5e14;
+            font-size: 30px;
+            float: left;
+            margin-top: 8px;
+        }
+
+        .cta-text {
+            padding-left: 15px;
+            display: inline-block;
+        }
+
+        .cta-text h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .cta-text span {
+            color: #757575;
+            font-size: 15px;
+        }
+
+        .footer-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-pattern img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 330px;
+            background-size: cover;
+            background-position: 100% 100%;
+        }
+
+        .footer-logo {
+            margin-bottom: 30px;
+        }
+
+        .footer-logo img {
+            max-width: 200px;
+        }
+
+        .footer-text p {
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: #7e7e7e;
+            line-height: 28px;
+        }
+
+        .footer-social-icon span {
+            color: #fff;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .footer-social-icon a {
+            color: #fff;
+            font-size: 16px;
+            margin-right: 15px;
+        }
+
+        .footer-social-icon i {
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 38px;
+            border-radius: 50%;
+        }
+
+
+        .google-bg {
+            background: #DD4B39;
+        }
+
+        .footer-widget-heading h3 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .footer-widget-heading h3::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            height: 2px;
+            width: 50px;
+            background: #ff5e14;
+        }
+
+        .footer-widget ul li {
+            display: inline-block;
+            float: left;
+            width: 50%;
+            margin-bottom: 12px;
+        }
+
+        .footer-widget ul li a:hover {
+            color: #ff5e14;
+        }
+
+        .footer-widget ul li a {
+            color: #878787;
+            text-transform: capitalize;
+        }
+
+        .subscribe-form {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subscribe-form input {
+            width: 100%;
+            padding: 14px 28px;
+            background: #2E2E2E;
+            border: 1px solid #2E2E2E;
+            color: #fff;
+        }
+
+        .subscribe-form button {
+            position: absolute;
+            right: 0;
+            background: #ff5e14;
+            padding: 13px 20px;
+            border: 1px solid #ff5e14;
+            top: 0;
+        }
+
+        .subscribe-form button i {
+            color: #fff;
+            font-size: 22px;
+            transform: rotate(-6deg);
+        }
+
+        .copyright-area {
+            background: #202020;
+            padding: 25px 0;
+        }
+
+        .copyright-text p {
+            margin: 0;
+            font-size: 14px;
+            color: #878787;
+        }
+
+
+
+        .footer-menu li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .footer-menu li:hover a {
+            color: greenyellow;
+        }
+
+        .footer-menu li a {
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .footer-text {
+            color: #ffffff;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .white-text {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ULTIMEZ</h1>
+        <nav>
+            <ul class="ul1">
+                <li>Home</li>
+                <li>Who are we</li>
+                <li>Solutions</li>
+                <li>Portfolio</li>
+                <li>Case Studies</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+                <li class="btn-login">Login</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main" style="width: 100%;">
+        <div class="main-section" style="width:50%">
+            <br>
+            <h1 id="head">Building the Digital<br> Universe</h1>
+            <p class="p-atg">With every client we serve, we bring forth a deep
+                passion for creative problem-solving and digital
+                innovations - that's what we deliver. We've great
+                minds at work for the best technologies to make
+                digital easy and impactful.</p>
+
+        </div>
+        <div class="side-section" style="width:50%">
+            <img id="img1" src="C:\Users\admin\Documents\HTML PROGRAMS\image.png">
+        </div>
+    </div>
+    </div>
+    <div class="section" style="display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    margin-top: 25px;
+    padding-top: 25px;">
+        <div class="1st-section" style="width: 50%; ">
+            <p id="d1">We craft digital strategies <br> that turn your brand into a <br> digital sensation</p>
+            <p id="d2">We are passionate about helping businesses thrive in the <br> digital landscape. Our team of
+                experts is dedicated to <br> providing cutting-edge digital marketing solutions tailored <br> to your
+                unique needs.<br> <br>
+
+                With our proven strategies, we'll boost your online presence, <br> engage your target audience, and
+                drive real results.</p>
+        </div>
+        <div class="2nd-section" style="text-align: left; width: 50%;">
+            <h5 class="b2">Define Clear Goals and Objectives</h5>
+            <p id="d3">Our strategy begins with a crystal-clear roadmap. We work closely <br> with you to define
+                specific, measurable, & achievable goals.</p>
+            <h5 class="b3">Target Audience</h5>
+            <p id="d4">We dive deep to understand your audience, forging connections <br> that transform visitors into
+                loyal customers.</p>
+            <h5 class="b4">Right Digital Channels</h5>
+            <p id="d5">We're like online detectives, discovering where your <br>customers are, and then we craft posts
+                and
+                ads that perfectly fit.</p>
+            <h5 class="b5">Analytics and Reporting</h5>
+            <p id="d7">We use analytics for precise campaign monitoring, tracking <br> website traffic, engagement, and
+                conversions.</p>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class=" row footer-content pt-5 pb-5" style="margin: 0 auto;
+        justify-content: center;">
+                <!-- <div class="row"> -->
+                <div class="col-md-4 border-right mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <h3>Ultimiz</h3>
+                        </div>
+                        <div class="footer-text ">
+                            <p style="padding:0px !important; color:#ffffff;" class="white-text">Lorem ipsum dolor sit
+                                amet, consec
+                                tetur adipisicing elit,
+                                sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row m-0">
+                        <div class="col-md-4">
+                            <ul>
+                                <li><a class="white-text">Services</a></li>
+                                <li><a class="white-text">Technologies</a></li>
+                                <li><a class="white-text">Products</a></li>
+                                <li><a class="white-text">portfolio</a></li>
+                                <li><a class="white-text">case studies</a></li>
+                                <li><a class="white-text">About us</a></li>
+                                <li><a class="white-text">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li><a class="white-text">Software development</a></li>
+                                <li><a class="white-text">Website deigning</a></li>
+                                <li><a hclass="white-text">Digital marketing</a></li>
+                                <li><a class="white-text">App Development</a></li>
+                                <li><a class="white-text">Branding</a></li>
+                                <li><a class="white-text">Hire Resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li><a class="white-text">Contact US</a></li>
+                                <li><a class="white-text">Careers</a></li>
+                                <li><a class="white-text">Clint terminal</a></li>
+                                <li><a class="white-text">Employee Login</a></li>
+                                <li><a class="white-text">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
